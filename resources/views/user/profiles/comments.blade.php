@@ -16,7 +16,7 @@
                         <div class="card-body">
                             {{ $comment->body }}
                             <hr class="my-3">
-                            <p class="text-muted small mt-3">Replied to <a href="{{ route('post.show', $comment->post->id) }}" class="text-decoration-none"> {{ $comment->user->name }}'s Posts</a></p>
+                            <p class="text-muted small mt-3">Replied to <a href="{{ route('post.show', $comment->post->id) }}" class="text-decoration-none"> {{ $comment->post->user->name }}'s Posts</a></p>
                         </div>
                     </div>
                 @empty
